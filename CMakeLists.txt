@@ -127,7 +127,7 @@ set(CMAKE_EXE_LINKER_FLAGS "-specs=nano.specs -specs=nosys.specs -Wl,--gc-sectio
 set(TARGET_LDSCRIPT_BLANK_AA "${NRF5_SDK_ROOT}/components/toolchain/gcc/nrf51_xxaa.ld")       # Blank device
 set(TARGET_LDSCRIPT_BLANK_AC "${NRF5_SDK_ROOT}/components/toolchain/gcc/nrf51_xxac.ld")       # Blank device with additional 16KB SRAM
 set(TARGET_LDSCRIPT_SD_AA    "${CMAKE_SOURCE_DIR}/components/toolchain/gcc/nrf51_xxaa_sd.ld") # With SoftDevice
-set(TARGET_LDSCRIPT_SD_AC    "${CMAKE_SOURCE_DIR}/components/toolchain/gcc/nrf51_xxaa_sd.ld") # With SoftDevice and additional 16KB SRAM
+set(TARGET_LDSCRIPT_SD_AC    "${CMAKE_SOURCE_DIR}/components/toolchain/gcc/nrf51_xxac_sd.ld") # With SoftDevice and additional 16KB SRAM
 
 # Add shared includes, defines and libs
 include_directories(${TARGET_C_INCLUDES})
